@@ -6,6 +6,7 @@ contract("learn3PO", (accounts) => {
     console.log(accounts);
     before(async() => {
         learn3PO = await Learn3PO.deployed();
+        console.log('Learn3PO:', learn3PO.address)
     });
 
     it("Gives the newbie dev 1M tokens", async () => {
